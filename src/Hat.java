@@ -4,9 +4,18 @@ public class Hat {
 
     // Start Menu
     public static void start() {
-        int variant = variant();
-        menu();
-        startProgram(numberTask(), variant);
+        Scanner in = new Scanner(System.in);
+        while (true) {
+            int variant = variant();
+            menu();
+            startProgram(numberTask(), variant);
+            boolean xyz = repeat();
+            if (xyz) {
+                System.out.println();
+                System.out.println();
+            }
+            if (!xyz) break;
+        }
     }
 
     // How variant
@@ -18,6 +27,7 @@ public class Hat {
 
     // Task menu
     public static void menu() {
+        System.out.println();
         System.out.println("MENU");
         System.out.println("1. Привет мир");
         System.out.println("2. Библиотека Math");
@@ -46,5 +56,19 @@ public class Hat {
             if (variant == 1) Task2.var1();
             if (variant == 2) Task2.var2();
         }
+    }
+    //
+    public static boolean repeat() {
+        Scanner in = new Scanner(System.in);
+
+        System.out.println();
+        System.out.println();
+        System.out.println("1. Повторить");
+        System.out.println("2. Закрыть");
+        int a = in.nextInt();
+        if (a == 1)
+            return true;
+        else
+            return false;
     }
 }

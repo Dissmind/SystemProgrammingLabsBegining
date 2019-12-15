@@ -20,6 +20,21 @@ public class Task2 {
     }
 
     public static void var2() {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Введите А >>> ");
+        int a = in.nextInt();
+
+        System.out.print("Введите B >>> ");
+        int b = in.nextInt();
+
+        System.out.print("Введите C >>> ");
+        int c = in.nextInt();
+
+        double result = Math.log10(b) / (a+c);
+
+        System.out.println();
+        System.out.println("Ответ: " + result);
 
     }
 }
