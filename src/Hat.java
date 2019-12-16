@@ -5,16 +5,20 @@ public class Hat {
     // Start Menu
     public static void start() {
         Scanner in = new Scanner(System.in);
+
         while (true) {
             int variant = variant();
+
             menu();
             startProgram(numberTask(), variant);
-            boolean xyz = repeat();
-            if (xyz) {
+
+            boolean input = repeat();
+
+            if (input) {
                 System.out.println();
                 System.out.println();
             }
-            if (!xyz) break;
+            if (!input) break;
         }
     }
 
@@ -55,6 +59,10 @@ public class Hat {
 
             if (variant == 1) Task2.var1();
             if (variant == 2) Task2.var2();
+            if (variant == 3) Task2.var3();
+            if (variant == 4) Task2.var4();
+            if (variant == 5) Task2.var5();
+            if (variant == 6) Task2.var6();
         }
     }
     //
@@ -63,12 +71,13 @@ public class Hat {
 
         System.out.println();
         System.out.println();
+
         System.out.println("1. Повторить");
         System.out.println("2. Закрыть");
+
         int a = in.nextInt();
-        if (a == 1)
-            return true;
-        else
-            return false;
+
+        if (a == 1) return true;
+        else return false;
     }
 }
