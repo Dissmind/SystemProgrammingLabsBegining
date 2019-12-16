@@ -13,7 +13,7 @@ public class Task2 {
         System.out.print("Введите C >>> ");
         int c = in.nextInt();
 
-        int result = (b*b) - 4 * (a / c);
+        int result = (b * b) - 4 * (a / c);
 
         System.out.println();
         System.out.println("Ответ: " + result);
@@ -31,7 +31,7 @@ public class Task2 {
         System.out.print("Введите C >>> ");
         int c = in.nextInt();
 
-        double result = Math.log10(b) / (a+c);
+        double result = Math.log10(b) / (a + c);
 
         System.out.println();
         System.out.println("Ответ: " + result);
@@ -49,7 +49,7 @@ public class Task2 {
         System.out.print("Введите C >>> ");
         int c = in.nextInt();
 
-        double result = Math.cos(b) / (a%c);
+        double result = Math.cos(b) / (a % c);
 
         System.out.println();
         System.out.println("Ответ: " + result);
@@ -89,13 +89,13 @@ public class Task2 {
     public static void var6() {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Введите A: ");
+        System.out.print("Введите A: ");
         int a = in.nextInt();
 
-        System.out.println("Введите B: ");
+        System.out.print("Введите B: ");
         int b = in.nextInt();
 
-        System.out.println("Введите C: ");
+        System.out.print("Введите C: ");
         int c = in.nextInt();
 
         double result = Math.sin(1 / a) + Math.pow(b, c);
@@ -103,4 +103,75 @@ public class Task2 {
         System.out.println();
         System.out.println("Ответ: " + result);
     }
+
+    public static void var7() {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Введите A: ");
+        int a = in.nextInt();
+
+        System.out.print("Введите B: ");
+        int b = in.nextInt();
+
+        System.out.print("Введите C: ");
+        int c = in.nextInt();
+
+        double result = Math.exp(b) + c / a;
+
+        System.out.println();
+        System.out.println("Ответ: " + result);
+    }
+
+    public static void var8() {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Введите A: ");
+        int a = in.nextInt();
+
+        System.out.print("Введите B: ");
+        int b = in.nextInt();
+
+        double result = -(Math.max(a, b) / (a - b));
+
+        System.out.println();
+        System.out.println("Ответ: " + result);
+    }
+
+    public static void var9() {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Введите A: ");
+        int a = in.nextInt();
+
+        System.out.print("Введите B: ");
+        int b = in.nextInt();
+
+        System.out.print("Введите C: ");
+        int c = in.nextInt();
+
+        double result = Math.tan(a * b) - (1 / c);
+
+        System.out.println();
+        System.out.println("Ответ: " + result);
+    }
+
+    public static void var10() {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Введите А: ");
+        int a = in.nextInt();
+
+        System.out.print("Введите В: ");
+        int b = in.nextInt();
+
+        System.out.print("Введите С: ");
+        int c = in.nextInt();
+
+        double result = Math.sqrt(Math.min(a, Math.min(b, c))) + (c / 2);
+
+        System.out.println();
+        System.out.println("Ответ: " + result);
+    }
 }
+
+

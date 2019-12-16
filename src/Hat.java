@@ -63,6 +63,10 @@ public class Hat {
             if (variant == 4) Task2.var4();
             if (variant == 5) Task2.var5();
             if (variant == 6) Task2.var6();
+            if (variant == 7) Task2.var7();
+            if (variant == 8) Task2.var8();
+            if (variant == 9) Task2.var9();
+            if (variant == 10) Task2.var10();
         }
     }
     //
