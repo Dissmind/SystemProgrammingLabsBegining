@@ -57,16 +57,7 @@ public class Hat {
             System.out.println();
             System.out.println();
 
-            if (variant == 1) Task2.var1();
-            if (variant == 2) Task2.var2();
-            if (variant == 3) Task2.var3();
-            if (variant == 4) Task2.var4();
-            if (variant == 5) Task2.var5();
-            if (variant == 6) Task2.var6();
-            if (variant == 7) Task2.var7();
-            if (variant == 8) Task2.var8();
-            if (variant == 9) Task2.var9();
-            if (variant == 10) Task2.var10();
+            Task2.start(variant);
         }
     }
     //
