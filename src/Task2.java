@@ -33,6 +33,16 @@ public class Task2 {
         if (variant == 8) result = -(Math.max(a, b) / (a - b));
         if (variant == 9) result = Math.tan(a * b) - (1 / c);
         if (variant == 10) result = Math.sqrt(Math.min(a, Math.min(b, c))) + (c / 2);
+        if (variant == 11) result = Math.pow(Math.sqrt(a * b), c);
+        if (variant == 12) result = Math.abs(a - b) / Math.pow(-c, 2);
+        if (variant == 13) result = a % b * (Math.pow(c, 3));
+        if (variant == 14) result = b / (a * c) - (Math.pow(c, 2));
+        if (variant == 15) result = Math.pow(b, 2) - (Math.tan(b / c));
+        if (variant == 16) result = Math.abs((a / b) - (Math.pow(c, 2)));
+        if (variant == 17) result = Math.sqrt(c - Math.max(a, b));
+        if (variant == 18) result = Math.tan(1 / a) - (b / c);
+        if (variant == 19) result = Math.log(a / b) + c;
+        if (variant == 20) result = (c / Math.pow(a, 2)) - b;
 
         System.out.println();
         System.out.println("Ответ: " + result);
