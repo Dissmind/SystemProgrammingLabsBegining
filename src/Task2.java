@@ -43,6 +43,16 @@ public class Task2 {
         if (variant == 18) result = Math.tan(1 / a) - (b / c);
         if (variant == 19) result = Math.log(a / b) + c;
         if (variant == 20) result = (c / Math.pow(a, 2)) - b;
+        if (variant == 21) result = a / Math.abs(Math.pow((c - b), 2));
+        if (variant == 22) result = Math.pow((c - b % a), 2);
+        if (variant == 23) result = Math.pow(Math.min(a, Math.min(b, c)), a % c);
+        if (variant == 24) result = Math.pow(Math.sqrt(a - b), (c + 1));
+        if (variant == 25) result = Math.pow(Math.pow(a, (1 / b)), (1 / c)) % a;
+        if (variant == 26) result = (a - b) / Math.pow((b - c), 2);
+        if (variant == 27) result = Math.pow(Math.log(c - a), b);
+        if (variant == 28) result = Math.cos(a) / Math.pow(b, (c + 1));
+        if (variant == 29) result = (a % b) / Math.sin(c);
+        if (variant == 30) result = Math.log10(c) + (a / b);
 
         System.out.println();
         System.out.println("Ответ: " + result);
