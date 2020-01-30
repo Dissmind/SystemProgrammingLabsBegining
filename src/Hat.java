@@ -35,6 +35,7 @@ public class Hat {
         System.out.println("MENU");
         System.out.println("1. Привет мир");
         System.out.println("2. Библиотека Math");
+        System.out.println("3. Массивы");
         System.out.print(" >>> ");
     }
 
@@ -58,6 +59,13 @@ public class Hat {
             System.out.println();
 
             Task2.start(variant);
+        }
+
+        if (number == 3) {
+            System.out.println();
+            System.out.println();
+
+            Task3.start(variant);
         }
     }
     //
