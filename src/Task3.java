@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Task3 {
 
     public static void start(int variant) {
+        Scanner in = new Scanner(System.in);
 
             int result = 0;
 
@@ -14,20 +15,23 @@ public class Task3 {
 //                    }
 //                 break;
                 case 1 :
+                    System.out.println("Сколько элементов в массиве?");
+                    int a = in.nextInt();
 
-                    Scanner in = new Scanner(System.in);
+                    int[] array = new int[a];
 
-                    int[] array = new int[5];
+                    if (a > 20) break;
 
                     for (int i = 0; i < array.length; i++) {
                         array[i] = in.nextInt();
                     }
 
                     for (int i : array) {
-                        if (i % 3 ==0) result += i;
+                        if (i % 3 == 0) result += i;
                     }
                 break;
             }
-        System.out.println("Ответ " + result);
+            if (result == 0) System.out.println("Error 147");
+            else System.out.println("Ответ >>> " + result);
     }
 }
