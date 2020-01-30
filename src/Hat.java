@@ -34,7 +34,7 @@ public class Hat {
         System.out.println();
         System.out.println("MENU");
         System.out.println("1. Привет мир");
-        System.out.println("2. Библиотека Math");
+        System.out.println("2. Библиотека math");
         System.out.println("3. Массивы");
         System.out.print(" >>> ");
     }
