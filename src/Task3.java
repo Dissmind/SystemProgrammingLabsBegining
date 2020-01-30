@@ -3,6 +3,7 @@ public class Task3 {
 
     public static void start(int variant) {
         Scanner in = new Scanner(System.in);
+        System.out.println("Сколько элементов в массиве?");
 
             int result = 0;
 
@@ -15,12 +16,13 @@ public class Task3 {
 //                    }
 //                 break;
                 case 1 :
-                    System.out.println("Сколько элементов в массиве?");
                     int a = in.nextInt();
 
                     int[] array = new int[a];
 
                     if (a > 20) break;
+
+                    System.out.println("Ввод >>> ");
 
                     for (int i = 0; i < array.length; i++) {
                         array[i] = in.nextInt();
@@ -28,6 +30,24 @@ public class Task3 {
 
                     for (int i : array) {
                         if (i % 3 == 0) result += i;
+                    }
+                break;
+
+                case 2 :
+                    int b = in.nextInt();
+
+                    int[] array2 = new int[b];
+
+                    if (b > 20) break;
+
+                    System.out.println("Ввод >>> ");
+
+                    for (int i = 0; i < array2.length; i++) {
+                        array2[i] = in.nextInt();
+                    }
+
+                    for (int i : array2) {
+                        if (i % 5 != 0) result *= i;
                     }
                 break;
             }
