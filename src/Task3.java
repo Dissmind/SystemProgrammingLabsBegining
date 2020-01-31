@@ -16,6 +16,9 @@ public class Task3 {
 //                    }
 //                 break;
                 case 1 :
+                    // TODO: Принцип DRY (don't repeat yourself, с буржуйского - неповторяйся)
+                    // TODO: Почему бы не сделать отдельный метод
+                    // TODO: Тем более у тебя всегда эта часть должна быть в начале, изменяется лишь алгоритм (посмотри как ты это решил в Task2)
                     int a = in.nextInt();
 
                     int[] array = new int[a];
@@ -34,6 +37,7 @@ public class Task3 {
                 break;
 
                 case 2 :
+                    // TODO: x2 Принцип DRY (don't repeat yourself, с буржуйского - неповторяйся)
                     int b = in.nextInt();
 
                     int[] array2 = new int[b];
@@ -51,7 +55,8 @@ public class Task3 {
                     }
                 break;
             }
+            // TODO: Почему ошибка? А если в массиве нету элементов?
             if (result == 0) System.out.println("Error 147");
-            else System.out.println("Ответ >>> " + result);
+                else System.out.println("Ответ >>> " + result);
     }
 }
