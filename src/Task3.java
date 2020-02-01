@@ -32,6 +32,6 @@ public class Task3 {
                     }
                 break;
             }
-            System.out.println("Ответ >>> " + result);
+            System.out.println("Ответ >>>> " + result);
     }
 }
