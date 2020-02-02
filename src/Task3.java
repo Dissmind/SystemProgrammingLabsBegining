@@ -16,7 +16,7 @@ public class Task3 {
             array[i] = in.nextInt();
         }
 
-            int result = 0;
+            int result = 1;
 
             switch(variant) {
 
@@ -28,6 +28,7 @@ public class Task3 {
 //                    }
 //                 break;
                 case 1 :
+                    result = 0;
                     // TODO: Принцип DRY (don't repeat yourself, с буржуйского - неповторяйся)
                     // TODO: Почему бы не сделать отдельный метод
                     // TODO: Тем более у тебя всегда эта часть должна быть в начале, изменяется лишь алгоритм (посмотри как ты это решил в Task2)
@@ -38,11 +39,22 @@ public class Task3 {
 
                 case 2 :
                     // TODO: x2 Принцип DRY (don't repeat yourself, с буржуйского - неповторяйся)
-                    result = 1;
                     for (double i : array) {
                         if (i % 5 != 0) result *= i;
                     }
                 break;
+
+                case 3 :
+                    for (double i :array) {
+                        if (i % 10 == 2) result *= i;
+                    }
+
+                case 4 :
+                    result = 0;
+                     for (double i : array) {
+                         if (i > 0 & i % 10 != 1) result += i;
+                         else return;
+                     }
             }
             // TODO: Почему ошибка? А если в массиве нет элементов?
                 System.out.println("Ответ >>> " + result);
