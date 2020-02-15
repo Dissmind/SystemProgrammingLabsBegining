@@ -20,27 +20,16 @@ public class Task3 {
 
             switch(variant) {
 
-//                case 1 :
-//                    int[] array = {1, 2, 3, 4, 5, 6, 9, 10};
-//
-//                    for (int i = 0; i < array.length; i++) {
-//                        if (array [i] % 3 ==0) result += array[i];
-//                    }
-//                 break;
                 case 1 :
                     result = 0;
-                    // TODO: Принцип DRY (don't repeat yourself, с буржуйского - неповторяйся)
-                    // TODO: Почему бы не сделать отдельный метод
-                    // TODO: Тем более у тебя всегда эта часть должна быть в начале, изменяется лишь алгоритм (посмотри как ты это решил в Task2)
                     for (int i : array) {
-                        if (i % 3 == 0) result += i;
+                        if (i / 3 == 0) result += i;
                     }
                 break;
 
                 case 2 :
-                    // TODO: x2 Принцип DRY (don't repeat yourself, с буржуйского - неповторяйся)
-                    for (double i : array) {
-                        if (i % 5 != 0) result *= i;
+                    for (int i : array) {
+                        if (i / 5 != 0) result *= i;
                     }
                 break;
 
@@ -51,12 +40,33 @@ public class Task3 {
 
                 case 4 :
                     result = 0;
-                     for (double i : array) {
-                         if (i > 0 & i % 10 != 1) result += i;
-                         else return;
+                    for (int i : array) {
+                        if (i > 0 & i / 10 != 1) result += i;
                      }
+                case 5 :
+                    for (double i : array) {
+                        if (i < 0 & i / 2 != 0) result *= i;
+                    }
+                case 6 :
+                    result = 0;
+                    for (int i : array) {
+                        if (i > 0 & i / 2 == 0) result += i;
+                    }
+                case 7 :
+                    for (int i : array) {
+                        if (i > 0 & i < 10) result *= i;
+                    }
+                case 8 :
+                    result = 0;
+                    for (int i : array) {
+                        if (i > 0 & i / 7 != 0) result =+ i;
+                    }
+                case 9 :
+                    result = 0;
+                    for (int i : array) {
+                        if (i / 10 == 0) result += i;
+                    }
             }
-            // TODO: Почему ошибка? А если в массиве нет элементов?
                 System.out.println("Ответ >>> " + result);
     }
 }
