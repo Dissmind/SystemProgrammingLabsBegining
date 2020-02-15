@@ -23,13 +23,13 @@ public class Task3 {
                 case 1 :
                     result = 0;
                     for (int i : array) {
-                        if (i / 3 == 0) result += i;
+                        if (i % 3 == 0) result += i;
                     }
                 break;
 
                 case 2 :
                     for (int i : array) {
-                        if (i / 5 != 0) result *= i;
+                        if (i % 5 != 0) result *= i;
                     }
                 break;
 
@@ -37,35 +37,48 @@ public class Task3 {
                     for (double i :array) {
                         if (i % 10 == 2) result *= i;
                     }
+                break;
 
                 case 4 :
                     result = 0;
                     for (int i : array) {
-                        if (i > 0 & i / 10 != 1) result += i;
+                        if (i > 0 & i % 10 != 1) result += i;
                      }
+                break;
+
                 case 5 :
                     for (double i : array) {
-                        if (i < 0 & i / 2 != 0) result *= i;
+                        if (i < 0 & i % 2 != 0) result *= i;
                     }
+                break;
+
                 case 6 :
                     result = 0;
                     for (int i : array) {
-                        if (i > 0 & i / 2 == 0) result += i;
+                        if (i > 0 & i % 2 == 0) result += i;
                     }
+                break;
+
                 case 7 :
                     for (int i : array) {
-                        if (i > 0 & i < 10) result *= i;
+                        if (i > -10 & i < 10) result *= i;
                     }
+                break;
+
                 case 8 :
                     result = 0;
                     for (int i : array) {
-                        if (i > 0 & i / 7 != 0) result =+ i;
+                        if (i > 0 & i % 7 != 0) result =+ i;
                     }
+                break;
+
                 case 9 :
                     result = 0;
                     for (int i : array) {
-                        if (i / 10 == 0) result += i;
+                        if (i % 10 == 0) result += i;
                     }
+                 break;
+
             }
                 System.out.println("Ответ >>> " + result);
     }
